@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "type": "module",
-
   "scripts": {
     "start": "nodemon index.js",
+    "dev": "concurrently \npm start\" \"npm run client\"",
     "postinstall": "prisma generate"
   },
   "dependencies": {
